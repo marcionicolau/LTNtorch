@@ -1,9 +1,9 @@
 # Copyright (c) 2021-2024 Tommaso Carraro
 # Licensed under the MIT License. See LICENSE file in the project root for details.
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
@@ -20,7 +20,13 @@ setup(
     description="LTNtorch: PyTorch implementation of Logic Tensor Networks",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    keywords=["pytorch", "machine-learning", "framework", "neural-symbolic-computing", "fuzzy-logic"],
+    keywords=[
+        "pytorch",
+        "machine-learning",
+        "framework",
+        "neural-symbolic-computing",
+        "fuzzy-logic",
+    ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python :: 3.9",
